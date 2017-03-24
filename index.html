@@ -2,107 +2,106 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Volunteer form</title>
-  <meta name="viewport" content="">
-  <link href="/css/modules.css" rel="stylesheet">
-  <link href="/css/grid.css" rel="stylesheet">
-  <link href="/css/type.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+  <title>Volunteer Form</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/modules.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/type.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700" rel="stylesheet">
 </head>
 <body>
   <header class="gutter-1-2 pad-t pad-b-1-2 push-2">
-    <h1>Apply to be a tree planter</h1>
-    <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    <h1 class="exa push-1-2 bold">Apply to be a tree planter</h1>
+    <p class="mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
   </header>
-  <form class="post" action="http://formspree.io/vess31@live.ca" method="post">
+  <form method="POST" action="https://formspree.io/vess31@live.ca">
     <fieldset class="pad-t-1-2">
       <legend class="giga bold gutter-1-2 push">Personal details</legend>
       <div class="grid">
         <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
           <label class="push-1-8" for="name">Full name</label>
           <input class="push-1-8" id="name" name="name">
-          <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+          <p class="italic micro push-0">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
         </div>
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
           <label class="push-1-8" for="text">What should we call you?</label>
-          <input class="push-1-8" type="text" name="text" id="text">
-          <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
+          <input class="push-1-8" id="text" type="text" name="text">
+          <p class="italic micro">What all your friends call you, e.g. “Liz”. </p>
         </div>
         <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
-          <label for="date">Date of birth</label>
-          <input type="date" name="date" id="date">
+          <label class="push-1-8" for="date">Date of birth</label>
+          <input class="push-1-8" id="date" type="date" name="date">
         </div>
         <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
           <label for="subject">T-shirt size</label>
           <select id="subject" name="subject">
             <option value="">Select a t-shirt size</option>
-            <option value="">Fitted: XS</option>
-            <option value="">Fitted: S</option>
-            <option value="">Fitted: M</option>
-            <option value="">Fitted: L</option>
-            <option value="">Fitted: XL</option>
-            <option value="">Straight-cut: XS</option>
-            <option value="">Straight-cut: S</option>
-            <option value="">Straight-cut: M</option>
-            <option value="">Straight-cut: L</option>
-            <option value="">Straight-cut: XL</option>
+            <option>Fitted: XS</option>
+            <option>Fitted: S</option>
+            <option>Fitted: M</option>
+            <option>Fitted: L</option>
+            <option>Fitted: XL</option>
+            <option>Straight-cut: XS</option>
+            <option>Straight-cut: S</option>
+            <option>Straight-cut: M</option>
+            <option>Straight-cut: L</option>
+            <option>Straight-cut: XL</option>
           </select>
         </div>
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
-          <label class="push-1-8" for="email">Email</label>
-          <input class="push-1-8" type="email" name="email" id="email">
-        </div>
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
-          <label class="push-1-8" for="number">Phone number</label>
-          <input class="push-1-8" type="tel" name="number" id="number">
-        </div>
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+        <label class="push-1-8" for="email">Email</label>
+        <input class="push-1-8" id="email" type="email" name="email">
       </div>
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push-1-2 gutter-1-2">
+        <label class="push-1-8" for="number">Phone number<em class="optional italic"> (optional)</em></label>
+        <input class="push-1-8" id="number" type="tel" name="number">
+      </div>
+    </div>
     </fieldset>
-    <hr class="max-length">
-    <fieldset class="push-t-1-2">
+    <hr class="max-length push-2">
+    <fieldset class="pad-t-1-2">
       <legend class="bold giga gutter-1-2 push">Address</legend>
       <div class="grid">
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
-          <div class="push-1-2">
-            <label class="push-1-8" for="address">Street address</label>
-            <input name="address" id="address">
-          </div>
-        </div>
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
-          <div class="push-1-2">
-            <label class="push-1-8" for="city">City</label>
-            <input name="city" id="city">
-          </div>
-        </div>
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
-          <div class="push-1-2">
-            <label class="push-1-8" for="province">Province</label>
-            <select id="province" name="province">
-              <option value="">Select a province</option>
-              <option>Alberta</option>
-              <option>British Columbia</option>
-              <option>Manitoba</option>
-              <option>New Brunswick</option>
-              <option>Newfoundland & Labrador</option>
-              <option>Northwest Territories</option>
-              <option>Nova Scotia</option>
-              <option>Nunavut</option>
-              <option>Ontario</option>
-              <option>Prince Edward Island</option>
-              <option>Québec</option>
-              <option>Saskatchewan</option>
-              <option>Yukon</option>
-            </select>
-          </div>
-        </div>
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
-          <div class="push-1-2">
-            <label class="push-1-8" for="postalcode">Postal code</label>
-            <input id="postalcode" name="postalcode">
-          </div>
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+        <div class="push-1-2">
+          <label class="push-1-8" for="address">Street address</label>
+          <input id="address" name="address">
         </div>
       </div>
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+        <div class="push-1-2">
+          <label class="push-1-8" for="city">City</label>
+          <input id="city" name="city">
+        </div>
+      </div>
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+        <div class="push-1-2">
+          <label class="push-1-8" for="province">Province</label>
+          <select id="province" name="province">
+            <option value="">Select a province</option>
+            <option>Alberta</option>
+            <option>British Colombia</option>
+            <option>Manitoba</option>
+            <option>New Brunswick</option>
+            <option>Newfoundland & Labrador</option>
+            <option>Northwest Territories</option>
+            <option>Nova Scotia</option>
+            <option>Nunavut</option>
+            <option>Ontario</option>
+            <option>Prince Edward Island</option>
+            <option>Quebec</option>
+            <option>Saskatchewan</option>
+            <option>Yukon</option>
+          </select>
+        </div>
+      </div>
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+        <div class="push-1-2">
+          <label class="push-1-8" for="postalcode">Postal code</label>
+          <input id="postalcode" name="postalcode">
+        </div>
+    </div>
     </fieldset>
     <hr class="max-length">
     <fieldset class="gutter pad-t-1-2">
@@ -142,7 +141,7 @@
         </div>
       </div>
       <div>
-        <h2 class="bold mega">Do you have any experience with the following?</h2>
+        <h2 class="bold mega pad-t-2">Do you have any experience with the following?</h2>
         <div class="push-1-4">
           <input type="checkbox" id="shovels">
           <label for="shovels">Shovels</label>
@@ -173,7 +172,7 @@
         </div>
         <div class="push-1-4">
           <input type="checkbox" id="plant">
-          <label for="plant">Plant indentification</label>
+          <label for="plant">Plant identification</label>
         </div>
         <div class="push-1-4">
           <input type="checkbox" id="planning">
@@ -188,39 +187,40 @@
     <hr class="max-length">
     <fieldset class="gutter pad-t-1-2">
       <div class="push pad-b">
+        <input type="checkbox" id="license" checked>
         <p class="bold mega">Do you have a valid driver’s license?</p>
         <input type="radio" id="driveryes">
         <label for="driveryes">Yes</label>
         <input type="radio" id="driverno">
         <label for="driverno">No</label>
       </div>
-      <div class="pad=b">
+      <div class="pad-b">
         <p class="bold mega">Do you have a pick-up truck you’d be willing to use?</p>
         <input type="radio" id="truckyes">
         <label for="truckyes">Yes</label>
         <input type="radio" id="truckno">
         <label for="truckno">No</label>
       </div>
-      <div class="pad=b">
+      <div class="pad-b">
         <p class="bold mega">Do you have up-to-date first-aid certification?</p>
-        <input type="radio" id="firstaidyes">
-        <label for="firstaidyes">Yes</label>
-        <input type="radio" id="firstaidno">
-        <label for="firstaidno">No</label>
+        <input type="radio" id="aidyes">
+        <label for="aidyes">Yes</label>
+        <input type="radio" id="aidno">
+        <label for="aidno">No</label>
       </div>
     </fieldset>
     <hr class="max-length">
-    <fieldset class="max-length">
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-        <h2>Please let us know any comments or questions you may have.</h2>
-        <textarea name="message" id="message"></textarea>
+    <fieldset class="pad-t-1-2">
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter">
+        <h2 class="bold mega">Please let us know any comments or questions you may have.</h2>
+        <textarea id="message" name="message"></textarea>
       </div>
     </fieldset>
     <hr class="max-length">
     <div class="text-center">
-      <button class="btn tera" type="submit">Submit</button>
+      <button class="btn tera" type="submit">Apply</button>
     </div>
   </form>
-  <footer>© Tree Hugger International Organization</footer>
+  <footer class="island">© Tree Hugger International Organization</footer>
 </body>
 </html>
