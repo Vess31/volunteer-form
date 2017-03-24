@@ -18,40 +18,47 @@
   <form class="post" action="http://formspree.io/vess31@live.ca" method="post">
     <fieldset>
       <legend>Personal Details</legend>
+      <div class="grid">
+        <div class="unit">
+          <label for="name">Full name</label>
+          <input id="name" name="name">
+          <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+        </div>
+        <div class="unit">
+          <label for="text">What should we call you?</label>
+          <input type="text" name="text" id="text">
+          <p>What all your friends call you, e.g. “Liz”.</p>
+        </div>
+        <div class="unit">
+          <label for="date">Date of birth</label>
+          <input type="date" name="date" id="date">
+        </div>
+        <div class="unit">
+          <label for="subject">T-shirt size</label>
+          <select id="subject" name="subject">
+            <option value="">Select a t-shirt size</option>
+            <option value="">Fitted: XS</option>
+            <option value="">Fitted: S</option>
+            <option value="">Fitted: M</option>
+            <option value="">Fitted: L</option>
+            <option value="">Fitted: XL</option>
+            <option value="">Straight-cut: XS</option>
+            <option value="">Straight-cut: S</option>
+            <option value="">Straight-cut: M</option>
+            <option value="">Straight-cut: L</option>
+            <option value="">Straight-cut: XL</option>
+          </select>
+        </div>
+        <div class="unit">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="unit">
+          <label for="number">Phone number</label>
+          <input type="number" name="number" id="number">
+        </div>
+      </div>
     </fieldset>
-    <div class="grid">
-      <div class="unit">
-        <label for="name">Full name</label>
-        <input id="name" name="name">
-        <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
-      </div>
-      <div class="unit">
-        <label for="text">What should we call you?</label>
-        <input type="text" name="text" id="text">
-        <p>What all your friends call you, e.g. “Liz”.</p>
-      </div>
-      <div class="unit">
-        <label for="date">Date of birth</label>
-        <input type="date" name="date" id="date">
-      </div>
-      <div class="unit">
-        <label for="subject">T-shirt size</label>
-        <select id="subject" name="subject">
-          <option value="">Select a t-shirt size</option>
-          <option value="">Fitted: XS</option>
-          <option value="">Fitted: S</option>
-          <option value="">Fitted: M</option>
-          <option value="">Fitted: L</option>
-          <option value="">Fitted: XL</option>
-          <option value="">Straight-cut: XS</option>
-          <option value="">Straight-cut: S</option>
-          <option value="">Straight-cut: M</option>
-          <option value="">Straight-cut: L</option>
-          <option value="">Straight-cut: XL</option>
-        </select>
-      </div>
-    </div>
-
   </form>
 </body>
 </html>
