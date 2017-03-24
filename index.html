@@ -11,29 +11,29 @@
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="gutter-1-2 pad-t pad-b-1-2 push-2">
     <h1>Apply to be a tree planter</h1>
     <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
   </header>
   <form class="post" action="http://formspree.io/vess31@live.ca" method="post">
-    <fieldset>
-      <legend>Personal Details</legend>
+    <fieldset class="pad-t-1-2">
+      <legend class="giga bold gutter-1-2 push">Personal Details</legend>
       <div class="grid">
-        <div class="unit">
-          <label for="name">Full name</label>
-          <input id="name" name="name">
-          <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+          <label class="push-1-8" for="name">Full name</label>
+          <input class="push-1-8" id="name" name="name">
+          <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
         </div>
-        <div class="unit">
-          <label for="text">What should we call you?</label>
-          <input type="text" name="text" id="text">
-          <p>What all your friends call you, e.g. “Liz”.</p>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+          <label class="push-1-8" for="text">What should we call you?</label>
+          <input class="push-1-8" type="text" name="text" id="text">
+          <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
         </div>
-        <div class="unit">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
           <label for="date">Date of birth</label>
           <input type="date" name="date" id="date">
         </div>
-        <div class="unit">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
           <label for="subject">T-shirt size</label>
           <select id="subject" name="subject">
             <option value="">Select a t-shirt size</option>
@@ -49,33 +49,33 @@
             <option value="">Straight-cut: XL</option>
           </select>
         </div>
-        <div class="unit">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+          <label class="push-1-8" for="email">Email</label>
+          <input class="push-1-8" type="email" name="email" id="email">
         </div>
-        <div class="unit">
-          <label for="number">Phone number</label>
-          <input type="number" name="number" id="number">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+          <label class="push-1-8" for="number">Phone number</label>
+          <input class="push-1-8" type="number" name="number" id="number">
         </div>
       </div>
     </fieldset>
-    <hr>
-    <fieldset>
-      <legend>Address</legend>
+    <hr class="max-length">
+    <fieldset class="push-t-1-2">
+      <legend class="bold giga gutter-1-2 push">Address</legend>
       <div class="grid">
-        <div class="unit">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
           <div class="push-1-2">
-            <label for="address">Street address</label>
+            <label class="push-1-8" for="address">Street address</label>
             <input name="address" id="address">
           </div>
         </div>
-        <div class="unit">
-          <div class="">
-            <label for="city">City</label>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+          <div class="push-1-2">
+            <label class="push-1-8" for="city">City</label>
             <input name="city" id="city">
           </div>
         </div>
-        <div class="unit">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
           <div class="push-1-2">
             <label class="push-1-8" for="province">Province</label>
             <select id="province" name="province">
@@ -96,12 +96,56 @@
             </select>
           </div>
         </div>
-        <div class="unit">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
           <div class="push-1-2">
-            <label for="postalcode">Postal code</label>
+            <label class="push-1-8" for="postalcode">Postal code</label>
             <input id="postalcode" name="postalcode">
           </div>
         </div>
+      </div>
+    </fieldset>
+    <hr class="max-length">
+    <fieldset class="gutter pad-t-1-2">
+      <div>
+        <h2 class="bold mega">What activities are you interested in helping with?</h2>
+        <div class="push-1-4">
+          <input type="checkbox" id="digging">
+          <label for="digging">Digging holes</label>
+        </div>
+        <div class="push-1-4">
+          <input type="checkbox" id="dirty">
+          <label for="dirty">Getting dirty</label>
+        </div>
+        <div class="push-1-4">
+          <input type="checkbox" id="heavy">
+          <label for="heavy">Lifting heavy objects</label>
+        </div>
+        <div class="push-1-4">
+          <input type="checkbox" id="driving">
+          <label for="driving">Driving people</label>
+        </div>
+        <div class="push-1-4">
+          <input type="checkbox" id="trees">
+          <label for="trees">Transporting trees</label>
+        </div>
+        <div class="push-1-4">
+          <input type="checkbox" id="photos">
+          <label for="photos">Taking photos</label>
+        </div>
+        <div class="push-1-4">
+          <input type="checkbox" id="publishing">
+          <label for="publishing">Online publishing</label>
+        </div>
+        <div class="push-1-4">
+          <input type="checkbox" id="managing">
+          <label for="managing">Managing people</label>
+        </div>
+      </div>
+      <div>
+        <h2 class="bold mega">Do you have any experience with the following?</h2>
+
+      </div>
+
       </div>
     </fieldset>
 
