@@ -49,59 +49,60 @@
             <option>Straight-cut: XL</option>
           </select>
         </div>
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
-        <label class="push-1-8" for="email">Email</label>
-        <input class="push-1-8" id="email" type="email" name="email">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+          <label class="push-1-8" for="email">Email</label>
+          <input class="push-1-8" id="email" type="email" name="email">
+        </div>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push-1-2 gutter-1-2">
+          <label class="push-1-8" for="number">Phone number<em class="optional italic"> (optional)</em></label>
+          <input class="push-1-8" id="number" type="tel" name="number">
+        </div>
       </div>
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push-1-2 gutter-1-2">
-        <label class="push-1-8" for="number">Phone number<em class="optional italic"> (optional)</em></label>
-        <input class="push-1-8" id="number" type="tel" name="number">
-      </div>
-    </div>
     </fieldset>
     <hr class="max-length push-2">
     <fieldset class="pad-t-1-2">
       <legend class="bold giga gutter-1-2 push">Address</legend>
       <div class="grid">
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
-        <div class="push-1-2">
-          <label class="push-1-8" for="address">Street address</label>
-          <input id="address" name="address">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+          <div class="push-1-2">
+            <label class="push-1-8" for="address">Street address</label>
+            <input id="address" name="address">
+          </div>
+        </div>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+          <div class="push-1-2">
+            <label class="push-1-8" for="city">City</label>
+            <input id="city" name="city">
+          </div>
+        </div>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+          <div class="push-1-2">
+            <label class="push-1-8" for="province">Province</label>
+            <select id="province" name="province">
+              <option value="">Select a province</option>
+              <option>Alberta</option>
+              <option>British Colombia</option>
+              <option>Manitoba</option>
+              <option>New Brunswick</option>
+              <option>Newfoundland & Labrador</option>
+              <option>Northwest Territories</option>
+              <option>Nova Scotia</option>
+              <option>Nunavut</option>
+              <option>Ontario</option>
+              <option>Prince Edward Island</option>
+              <option>Quebec</option>
+              <option>Saskatchewan</option>
+              <option>Yukon</option>
+            </select>
+          </div>
+        </div>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
+          <div class="push-1-2">
+            <label class="push-1-8" for="postalcode">Postal code</label>
+            <input id="postalcode" name="postalcode">
+          </div>
         </div>
       </div>
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
-        <div class="push-1-2">
-          <label class="push-1-8" for="city">City</label>
-          <input id="city" name="city">
-        </div>
-      </div>
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
-        <div class="push-1-2">
-          <label class="push-1-8" for="province">Province</label>
-          <select id="province" name="province">
-            <option value="">Select a province</option>
-            <option>Alberta</option>
-            <option>British Colombia</option>
-            <option>Manitoba</option>
-            <option>New Brunswick</option>
-            <option>Newfoundland & Labrador</option>
-            <option>Northwest Territories</option>
-            <option>Nova Scotia</option>
-            <option>Nunavut</option>
-            <option>Ontario</option>
-            <option>Prince Edward Island</option>
-            <option>Quebec</option>
-            <option>Saskatchewan</option>
-            <option>Yukon</option>
-          </select>
-        </div>
-      </div>
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter-1-2">
-        <div class="push-1-2">
-          <label class="push-1-8" for="postalcode">Postal code</label>
-          <input id="postalcode" name="postalcode">
-        </div>
-    </div>
     </fieldset>
     <hr class="max-length">
     <fieldset class="gutter pad-t-1-2">
@@ -213,7 +214,7 @@
     <fieldset class="pad-t-1-2">
       <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push gutter">
         <h2 class="bold mega">Please let us know any comments or questions you may have.</h2>
-        <textarea id="message" name="message"></textarea>
+        <textarea name="message" id="message" rows="8" cols="80"></textarea>
       </div>
     </fieldset>
     <hr class="max-length">
